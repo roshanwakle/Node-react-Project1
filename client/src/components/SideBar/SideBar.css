@@ -1,0 +1,9 @@
+.sidebarIcon {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.moveLeft{
+  left: 50px
+}

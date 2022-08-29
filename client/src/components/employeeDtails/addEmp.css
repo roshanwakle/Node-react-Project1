@@ -1,0 +1,45 @@
+
+.div{
+    border-radius: 50px;
+
+    padding: 20px;
+  }
+  
+  .inputDesign{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+ 
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .center{
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    padding: 10px;
+  }
+  .addSubmitButton{
+    width: 95%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    position:relative; 
+    left:20px; 
+    top:2px;
+  }
+  .addSubmitButton:hover {
+    background-color: #45a049;
+  }
+  .validation{
+    color: red;
+  }
+
+  /* Search Bar css */
+
+  

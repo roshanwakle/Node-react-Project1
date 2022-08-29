@@ -1,0 +1,261 @@
+
+.navbar {
+	width: 100%;
+	height: 70px;
+	background-color: #436dec;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.EntryHeading{
+	font-style: italic;
+	color: white;
+	animation: .5s linear 1s infinite alternate slidein;
+}
+.EntryHeading:hover{
+	color: rgb(192, 192, 192);
+}
+
+.navbar h1 {
+	color: white;
+	font-size: 25px;
+	margin-left: 20px;
+}
+.Header{
+	position: fixed;
+
+}
+
+.white_btn {
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	background-color: white;
+	border-radius: 20px;
+	width: 120px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+
+.login_container {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f5f5f5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login_form_container {
+	width: 900px;
+	height: 500px;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+	  0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+  }
+  /* ///////////////////////////////////////////// */
+  
+  /* .rounded_button{
+	width: 60px;
+	position: fixed;
+	top: 0;
+	height: 60px;
+	background-color: rgb(5, 65, 138);
+	color: #0ada30;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 50%;
+	border: none;
+	text-decoration: none;
+	transition:background 0.2s;
+	
+}
+.rounded_button :hover{
+	color: #27d317;
+} */
+  
+
+.UserProfileButton{
+	/* position: fixed;
+	top: 0;
+	border-radius: 25px;
+	margin-top: 1rem; */
+	border-color: rgb(19, 6, 67);
+	align-items: center;
+	border-radius: 100%;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	width: 60px;
+	background-color: rgb(5, 65, 138);
+	color: #0ada30;
+	/* border: none; */
+	text-decoration: none;
+	transition:background 0.2s;
+	/* position: fixed; */
+	/* height: 60px; */
+	position: fixed;
+	right: 0;
+	top: 10px;
+	width: 50px;
+	border: 3px solid #73AD21;
+}
+.UserProfileButton:hover{
+  color: aqua;
+}
+
+.EmployeeDetails{
+	position: absolute;
+	left: 120px;
+	width: 200px;
+	height: 120px
+}
+.userDetails{
+	position: absolute;
+	left: 350px;
+	width: 200px;
+	height: 120px
+}
+
+/* ====================================================================== */
+.carousel {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>> */

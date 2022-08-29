@@ -1,0 +1,147 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/* ////////// */
+  * {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+
+  row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .goButton{
+    color: white;
+    border-radius:15%;
+      background-color: black;
+      outline: none;
+      padding: 12px 0;
+      border-radius: 10px;
+      width: 100px;
+      font-weight: bold;
+      font-size: 10px;
+      cursor: pointer;
+  }
+  .goButton:hover{
+    color: rgb(158, 159, 162);
+  }
+  .submitButton{
+    color: rgb(18, 2, 2);
+    border-radius:15%;
+      background-color: rgb(148, 208, 236);
+      outline: none;
+      padding: 12px 0;
+      border-radius: 10px;
+      width: 100px;
+      font-weight: bold;
+      font-size: 10px;
+      cursor: pointer;
+  }
+  .submitButton:hover{
+    color: rgb(5, 23, 227);
+  }
+  
+
+  .deleteButton{
+    color: rgb(18, 2, 2);
+    border-radius:15%;
+      background-color: rgb(232, 171, 171);
+      outline: none;
+      padding: 12px 0;
+      border-radius: 10px;
+      width: 90px;
+      font-weight: bold;
+      font-size: 10px;
+      cursor: pointer;
+  }
+  .deleteButton:hover{
+    color: brown;
+  }
+  .updateButton{
+    color: rgb(18, 2, 2);
+    border-radius:15%;
+      background-color: rgb(135, 224, 165);
+      outline: none;
+      padding: 12px 0;
+      border-radius: 10px;
+      width: 100px;
+      font-weight: bold;
+      font-size: 10px;
+      cursor: pointer;
+  }
+  .updateButton:hover{
+    color: rgb(27, 202, 71);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
